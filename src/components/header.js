@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../pictures/shopsasa1.jpeg'; // Ensure the path is correct
 import './header.css';
 
 function AppHeader() {
@@ -8,7 +9,11 @@ function AppHeader() {
 
   return (
     <header className="header">
-      <h1 className="logo">ShopSasa</h1>
+      {/* Logo on the far left */}
+      <div className="logo">
+        <img src={logo} alt="ShopSasa Logo" className="logo-image" />
+      </div>
+      {/* Spread-out Navigation Buttons */}
       <nav className="nav">
         <button className="navButton" onClick={() => scrollToSection('home')}>Home</button>
         <button className="navButton" onClick={() => scrollToSection('about')}>About</button>
@@ -20,6 +25,9 @@ function AppHeader() {
 }
 
 export default AppHeader;
+
+
+
 
 
 

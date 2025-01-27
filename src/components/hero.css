@@ -1,0 +1,85 @@
+/* Hero.css */
+.hero {
+    background-color: #ffdb58; /* Can use background color for fallback or add a subtle gradient */
+    padding: 100px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-container {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .text-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .text-container h5 {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 500px; /* Set a max width for the image */
+    margin-left: 20px;
+    opacity: 0;
+    animation: slideIn 2s forwards;
+  }
+  
+  /* Animation for text */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation for image */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero .row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  

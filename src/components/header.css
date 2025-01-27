@@ -1,39 +1,58 @@
-/* src/components/header.css */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #ffdb58; /* Mustard color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  }
-  
-  .logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: #000; /* Black */
-  }
-  
-  .nav {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navButton {
-    background: none;
-    border: none;
-    font-size: 18px;
-    color: #000; /* Black */
-    cursor: pointer;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .navButton:hover {
-    background-color: #000; /* Black */
-    color: #ffdb58; /* Mustard color */
-  }
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff; /* Mustard color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Make the logo fill the header height */
+}
+
+.logo-image {
+  height: 100%; /* Make the logo fill the header height */
+  width: auto; /* Scale width proportionally */
+  max-width: 150px;
+  background-color: inherit; /* Inherit background color of header */
+
+}
+.nav {
+  display: flex;
+  flex: 1; /* Take up remaining space */
+  justify-content: flex-end; /* Align the nav items to the left */
+  margin-left: 20px; /* Add spacing between logo and nav */
+}
+
+.navButton {
+  background: none;
+  border: none;
+  font-size: 22px; /* Increased font size */
+  color: #000; /* Black */
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+}
+
+.navButton:hover {
+  background-color: #000; /* Black */
+  color: #ffdb58; /* Mustard color */
+}
+
+.navButton:active {
+  text-decoration: underline; /* Underline on click */
+}
+
+.navButton:focus {
+  text-decoration: underline; /* Ensure underline persists when focused */
+}
+
+
+
   
 
 

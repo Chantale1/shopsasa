@@ -11,12 +11,34 @@
   transition: background-color 0.3s ease; /* Smooth transition */
 }
 
+
 .home {
-  background-color: #fff5cc; /* Light mustard */
+  background-image: url('/home/chantale/shopsasa/shopsasa/src/pictures/background.avif'); /* Add the path to your background image */
+  background-size: cover; /* Ensure it covers the entire section */
+  background-position: center; /* Center the background */
+  color: white; /* Text color for readability */
+  padding: 50px; /* Add padding around the content */
+  text-align: center; /* Center the text */
+}
+
+
+.logo {
+  width: 150px; /* Adjust the size */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.home-image {
+  width: 100%; /* Make the image full width */
+  max-width: 600px; /* Limit the width to a reasonable size */
+  height: auto; /* Keep the aspect ratio */
+  margin-top: 20px; /* Space above the image */
+  border-radius: 10px; /* Optional: add rounded corners to the image */
 }
 
 .about {
-  background-color: #ffe066; /* Brighter mustard */
+  background-color: #ffffff; /* Brighter mustard */
 }
 
 .core-values {
