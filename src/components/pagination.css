@@ -1,0 +1,51 @@
+/* This will ensure each section takes up the full height of the viewport, 
+   has some padding, and centers the content both vertically and horizontally. */
+   .section {
+    padding: 20px; /* Adds space inside each section */
+    height: 100vh; /* Ensures each section takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Aligns the content in a column */
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers text inside the section */
+  }
+  
+  /* Additional styling for pagination (just as an example) */
+  
+  .pagination {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: rgb(32, 29, 27); /* Example color, change as needed */
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  
+  .pagination span {
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  
+  
+  
+  
+
+  

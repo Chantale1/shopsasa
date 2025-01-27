@@ -1,0 +1,123 @@
+/* src/App.css */
+.section {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000; /* Black text for readability */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.home {
+  background-color: #fff5cc; /* Light mustard */
+}
+
+.about {
+  background-color: #ffe066; /* Brighter mustard */
+}
+
+.core-values {
+  background-color: #fff5cc; /* Mustard color */
+}
+
+.services {
+  background-color: #ffe066; /* Darker mustard */
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #000; /* Black text */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #333; /* Darker text for better readability */
+}
+
+/* Adding some white elements for contrast */
+body {
+  background-color: #fff; /* White background for the body */
+  color: #333; /* Darker text for contrast */
+}
+
+h1, h2, h3 {
+  color: #000; /* Black headers for stronger contrast */
+}
+
+/* Add a white border to sections for some definition */
+.section {
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Space between content and pagination */
+  padding: 20px;
+}
+
+.pagination button {
+  background-color: #f5f2ee;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  color: #000000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #ffb84d; /* Slightly darker mustard on hover */
+}
+
+.pagination button:focus {
+  outline: none;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #333; /* Dark footer */
+  color: #fff; /* White text */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.footer .map {
+  width: 60%; /* Map takes 60% of the footer width */
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer .location {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: right;
+  max-width: 30%;
+}
+
+
+
+
+
+
+
+
+
+

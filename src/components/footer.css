@@ -1,0 +1,51 @@
+/* src/components/footer.css */
+.footer {
+    background-color: #333; /* Dark footer background */
+    color: #fff; /* White text */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%; /* Adjust the width as needed */
+    flex-wrap: wrap; /* Allow content to wrap for smaller screens */
+  }
+  
+  .map {
+    width: 60%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+  
+  .contact {
+    width: 35%;
+  }
+  
+  .contact h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .contact p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .contact a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  

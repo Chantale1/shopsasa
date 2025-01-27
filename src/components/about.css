@@ -1,0 +1,95 @@
+/* src/components/About.css */
+
+/* Main about block styling */
+.about-block {
+  background: linear-gradient(135deg, #fff5cc 30%, #ffdb58 70%); /* Gradient background */
+  padding: 60px 20px; /* Reduced padding for a more compact layout */
+  color: #333; /* Darker text for readability */
+  font-family: 'Poppins', sans-serif;
+  border-radius: 15px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+  max-width: 100%; /* Ensures content doesn't exceed screen width */
+  width: 100%;
+  height: 100vh; /* Make it take up full viewport height */
+  box-sizing: border-box; /* Ensure padding doesn't increase width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Title holder styling */
+.title-holder {
+  text-align: center;
+  margin-bottom: 30px; /* Reduced space between title and content */
+}
+
+.title-holder h2 {
+  font-size: 50px; /* Reduced title font size for better fitting */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px; /* Adjusted letter spacing for a balanced look */
+  color: #cc8a00; /* Dark mustard shade */
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Stronger text shadow for depth */
+}
+
+.subtitle {
+  font-size: 24px; /* Reduced subtitle font size */
+  font-style: italic;
+  color: #555; /* Slightly lighter gray for a softer look */
+  margin-bottom: 30px; /* Adjusted space between subtitle and content */
+}
+
+/* About text styling */
+.about-text {
+  font-size: 20px; /* Reduced font size for better fitting */
+  line-height: 1.8;
+  margin-bottom: 30px; /* Reduced margin for separation */
+  color: #444; /* Dark gray text for readability */
+  max-width: 80%; /* Ensures text doesn't span too wide */
+  text-align: center;
+}
+
+.about-text p {
+  margin-bottom: 20px; /* Adjusted margin between paragraphs */
+  color: #555; /* Slightly lighter color for paragraphs */
+  background:rgba(0, 0, 0, 0.05) ;
+}
+
+/* Image styling */
+.about-art {
+  text-align: center;
+  margin-top: 30px; /* Reduced space above the image */
+}
+
+
+
+/* Extra content section */
+.about-extra-content {
+  margin-top: 30px; /* Reduced margin for better fitting */
+  padding-top: 20px;
+  border-top: 3px solid #cc8a00; /* Darker mustard divider */
+}
+
+.about-extra-content h3 {
+  font-size: 32px; /* Reduced heading font size */
+  color: #cc8a00; /* Dark mustard color */
+  margin-bottom: 20px; /* Adjusted space below the heading */
+  text-transform: uppercase;
+}
+
+.about-extra-content p {
+  font-size: 20px; /* Reduced font size for extra content */
+  line-height: 1.6;
+  color: #444; /* Dark gray for better readability */
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.05); /* Subtle background highlight */
+  border-radius: 12px; /* Rounded corners for the paragraph */
+}
+
+  
+  
+  
+  
+  
