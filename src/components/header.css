@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start; /* Align items to the left */
   align-items: center;
-  padding: 15px 30px;
+  padding: 10px 20px; /* Reduced padding for a smaller header */
   background-color: #ffffff; /* Mustard color */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -14,26 +14,26 @@
 }
 
 .logo-image {
-  height: 100%; /* Make the logo fill the header height */
+  height: 40px; /* Reduced logo height */
   width: auto; /* Scale width proportionally */
-  max-width: 150px;
+  max-width: 100px; /* Reduce the maximum width */
   background-color: inherit; /* Inherit background color of header */
-
 }
+
 .nav {
   display: flex;
   flex: 1; /* Take up remaining space */
-  justify-content: flex-end; /* Align the nav items to the left */
+  justify-content: flex-end; /* Align the nav items to the right */
   margin-left: 20px; /* Add spacing between logo and nav */
 }
 
 .navButton {
   background: none;
   border: none;
-  font-size: 22px; /* Increased font size */
+  font-size: 18px; /* Decreased font size for a more typical navbar */
   color: #000; /* Black */
   cursor: pointer;
-  padding: 8px 15px;
+  padding: 8px 12px; /* Reduced padding for a smaller button */
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
 }
@@ -50,6 +50,7 @@
 .navButton:focus {
   text-decoration: underline; /* Ensure underline persists when focused */
 }
+
 
 
 

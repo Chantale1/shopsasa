@@ -1,30 +1,28 @@
 import React from 'react';
-import logo from '../pictures/shopsasa1.jpeg'; // Ensure the path is correct
-import './header.css';
+import logo from '../pictures/shopsasa.jpeg'; // Ensure the path to the logo is correct
 
-function AppHeader() {
-  const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-  };
 
+function AppHeader({ onScrollToSection }) {
   return (
     <header className="header">
-      {/* Logo on the far left */}
+      {/* Logo Section */}
       <div className="logo">
         <img src={logo} alt="ShopSasa Logo" className="logo-image" />
+      </div> 
+      
+      <div className="nav">
+        {/* Add scroll-to-home button to go to the Hero (Home) section */}
+        <button className="navButton" onClick={() => onScrollToSection('home')}>Home</button>
+        <button className="navButton" onClick={() => onScrollToSection('about')}>About</button>
+        <button className="navButton" onClick={() => onScrollToSection('core-values')}>Core Values</button>
+        <button className="navButton" onClick={() => onScrollToSection('services')}>Services</button>
       </div>
-      {/* Spread-out Navigation Buttons */}
-      <nav className="nav">
-        <button className="navButton" onClick={() => scrollToSection('home')}>Home</button>
-        <button className="navButton" onClick={() => scrollToSection('about')}>About</button>
-        <button className="navButton" onClick={() => scrollToSection('core-values')}>Core Values</button>
-        <button className="navButton" onClick={() => scrollToSection('services')}>Services</button>
-      </nav>
     </header>
   );
 }
 
 export default AppHeader;
+
 
 
 

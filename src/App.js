@@ -4,28 +4,32 @@ import About from './components/about';
 import Pagination from './components/pagination';
 import Footer from './components/footer';
 import Hero from './components/hero'; // Import Hero component
+import Values from './components/values'; // Import Values component
 import './App.css';
 
 function App() {
   const totalPages = 5;
 
+  // Function to handle the scroll to the section
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
-      <AppHeader />
-      <Hero /> {/* Use the Hero component here */}
+      <AppHeader onScrollToSection={scrollToSection} /> {/* Pass the scroll function to the header */}
+      <Hero /> {/* Hero component for the home page section */}
       <main>
-        <section id="home" className="section home">
-          <Hero />
-          
-          <Pagination totalPages={totalPages} />
-        </section>
         <section id="about" className="section about">
           <About />
           <Pagination totalPages={totalPages} />
         </section>
         <section id="core-values" className="section core-values">
-          <h2>Core Values</h2>
-          <p>These are our core values.</p>
+          <Values />
+          
           <Pagination totalPages={totalPages} />
         </section>
         <section id="services" className="section services">
@@ -40,6 +44,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 
