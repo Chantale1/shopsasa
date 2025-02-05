@@ -1,55 +1,66 @@
 .header {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Reduced padding for a smaller header */
-  background-color: #ffffff; /* Mustard color */
+  padding: 15px 30px; /* Adjusted padding for better spacing */
+  background: linear-gradient(to right, #ffcc00, #ff9900); /* Warm gradient for visibility */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: fixed; /* Keeps header visible when scrolling */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  height: 100%; /* Make the logo fill the header height */
 }
 
 .logo-image {
-  height: 40px; /* Reduced logo height */
-  width: auto; /* Scale width proportionally */
-  max-width: 100px; /* Reduce the maximum width */
-  background-color: inherit; /* Inherit background color of header */
+  height: 60px; /* Increased size for better visibility */
+  width: auto;
+  max-width: 140px;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3)); /* Subtle shadow for depth */
 }
+.logo-image {
+  height: 60px;
+  max-width: 140px;
+  mix-blend-mode: multiply; /* Tries to blend the white background */
+}
+
+
+
 
 .nav {
   display: flex;
-  flex: 1; /* Take up remaining space */
-  justify-content: flex-end; /* Align the nav items to the right */
-  margin-left: 20px; /* Add spacing between logo and nav */
+  gap: 20px;
 }
 
 .navButton {
   background: none;
   border: none;
-  font-size: 18px; /* Decreased font size for a more typical navbar */
-  color: #000; /* Black */
+  font-size: 18px;
+  color: #000; /* White text for contrast */
   cursor: pointer;
-  padding: 8px 12px; /* Reduced padding for a smaller button */
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .navButton:hover {
-  background-color: #000; /* Black */
-  color: #ffdb58; /* Mustard color */
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle highlight */
+  color: #000;
+  transform: scale(1.05);
 }
 
-.navButton:active {
-  text-decoration: underline; /* Underline on click */
-}
-
+.navButton:active,
 .navButton:focus {
-  text-decoration: underline; /* Ensure underline persists when focused */
+  text-decoration: underline;
 }
+
+
 
 
 

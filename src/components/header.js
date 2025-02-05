@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../pictures/shopsasa.jpeg'; // Ensure the path to the logo is correct
+import './header.css';
 
 
 function AppHeader({ onScrollToSection }) {

@@ -2,6 +2,11 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './values.css';
 
+// Optionally, import images for each value (e.g., person images, team, etc.)
+// import Image1 from '/path/to/image1.jpg';
+// import Image2 from '/path/to/image2.jpg';
+// import Image3 from '/path/to/image3.jpg';
+
 export default function Values() {
   return (
     <section id="values" className="block values-block">
@@ -16,6 +21,7 @@ export default function Values() {
         </Row>
 
         <div className="values-box">
+          {/* First Row of Values */}
           <Row className="values-text">
             <Col md={4}>
               <div className="value-container">
@@ -37,6 +43,7 @@ export default function Values() {
             </Col>
           </Row>
 
+          {/* Second Row of Values */}
           <Row className="mt-5 values-text">
             <Col md={4}>
               <div className="value-container">
@@ -56,6 +63,8 @@ export default function Values() {
     </section>
   );
 }
+
+
 
 
 

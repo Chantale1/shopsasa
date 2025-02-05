@@ -1,4 +1,3 @@
-// src/components/footer.js
 import React from 'react';
 import './footer.css';
 
@@ -7,20 +6,21 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="map">
-          {/* OpenStreetMap Embed for Ecobank Towers, Nairobi CBD */}
-          <iframe
-            title="OpenStreetMap"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=36.820710183143615%2C-1.2962050913964162%2C36.82546806335449%2C-1.2924653805087273&layer=mapnik"
-            width="100%"
-            height="300"
-            frameBorder="0"
-            style={{ border: 0 }}
-            allowFullScreen=""
-          ></iframe>
+          {/* Embed Google Maps iframe for Ecobank Towers */}
+          <iframe 
+            title="Ecobank Towers Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.203471893485!2d36.821080449074046!3d-1.2856732801242352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d718d1d3b1%3A0xe27807f3912640b1!2sEcobank%20Towers%20Branch!5e0!3m2!1sen!2ske!4v1738230373808!5m2!1sen!2ske" 
+            width="300" 
+            height="200" 
+            style={{ border: 0 }} 
+            allowFullScreen="" 
+            loading="lazy">
+          </iframe>
         </div>
         <div className="contact">
           <h3>Contact Us</h3>
           <p>Ecobank Towers, Nairobi CBD</p>
+          <p>P.O. Box: 12345-00100</p>
           <p>Email: <a href="mailto:contact@shopsasa.com">contact@shopsasa.com</a></p>
           <p>Phone: +254 700 000 000</p>
         </div>
@@ -30,5 +30,9 @@ function Footer() {
 }
 
 export default Footer;
+
+
+
+
 
 

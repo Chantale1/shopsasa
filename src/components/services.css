@@ -1,0 +1,170 @@
+/* Main services block */
+.services-block {
+  background: linear-gradient(to right, #ffcc00, #ff9900);
+  padding: 80px 20px;
+  color: black;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Hide overflow to keep images contained */
+}
+
+/* Services container */
+.services-container {
+  position: relative;
+  z-index: 2; /* Keep content above images */
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Background images */
+.service-side-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1; /* Behind the text */
+  opacity: 0.7; /* Make images clearer */
+  pointer-events: none; /* Prevent interaction */
+}
+
+/* Image styling */
+.left-image, .right-image {
+  width: 400px; /* Increase size */
+  height: auto;
+  position: absolute;
+}
+
+/* Adjust positions */
+.left-image {
+  top: 10%;
+  left: -400px; /* Move slightly inward */
+}
+
+.right-image {
+  bottom: 10%;
+  right: -420px; /* Move slightly inward */
+}
+
+
+/* Title styling */
+.title-holder {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title-holder h2 {
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 30px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Services list container */
+.services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  z-index: 2; /* Above images */
+}
+
+/* Service item */
+.service-item {
+  background: black;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 900px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+/* Staggered stair-like effect */
+.service-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.service-item:nth-child(2) {
+  margin-left: 40px;
+}
+
+.service-item:nth-child(3) {
+  margin-left: 80px;
+}
+
+.service-item:nth-child(4) {
+  margin-left: 120px;
+}
+
+.service-item:nth-child(5) {
+  margin-left: 160px;
+}
+
+/* Icon styling */
+.service-item .icon {
+  font-size: 70px;
+  color: white;
+}
+
+/* Hover effect */
+.service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  

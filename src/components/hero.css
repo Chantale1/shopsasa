@@ -1,91 +1,127 @@
-/* Hero.css */
-.hero {
-    height: 100vh; /* Make the hero section fill the entire height of the page */
-    background-image: 
-      linear-gradient(
-        rgba(0, 0, 0, 0.5), /* Gradient overlay (dark with transparency) */
-        rgba(0, 0, 0, 0.5)
-      ),
-      url('/home/chantale/shopsasa/shopsasa/src/pictures/background2.jpeg'); /* Replace with your actual background image */
-    background-size: cover; /* Ensure the image covers the full container */
-    background-position: center; /* Center the background image */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    color: white; /* Make text white for better visibility */
-    padding: 0 50px; /* Optional: Add padding on the sides */
-    text-align: center; /* Center text */
-  }
-  
-  .text-container {
-    max-width: 800px; /* Increase width to make text block larger */
-    padding: 0 20px; /* Add padding inside the container */
-  }
-  
-  .hero h1 {
-    font-size: 4rem; /* Make it larger */
-    font-family: 'Poppins', sans-serif; /* Change font */
-    font-weight: bold; /* Make it bold */
-    text-transform: uppercase; /* Make text uppercase */
-    letter-spacing: 2px; /* Add space between letters */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for visibility */
-    margin-bottom: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.hero-container {
+  background: linear-gradient(to right, #ffcc00, #cc8200); /* Warm gradient */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 50px;
+  position: relative;
+  overflow: hidden;
+  color: black; /* Changed to black */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Soft Background Glow */
+.hero-container::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 180, 0, 0.2);
+  border-radius: 50%;
+  top: 15%;
+  left: -100px;
+  filter: blur(120px);
+}
+
+/* Hero Text Styling */
+.hero-text {
+  max-width: 600px;
+  text-align: left;
+  margin-left: 50px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.hero-text h1 {
+  font-size: 4.5rem; /* Keep large size */
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: black; /* Ensure text appears black */
+  background: none; /* Remove gradient */
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+
+.hero-text p {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  color: black; /* Change to black */
+  font-weight: 300;
+}
+
+
+/* Icons Section */
+.hero-icons {
+  display: flex;
+  gap: 25px; /* More spacing */
+  margin-top: 20px;
+}
+
+.hero-icons .icon {
+  font-size: 2.5rem; /* Increased icon size */
+  background: rgba(0, 0, 0, 0.1); /* Darker background */
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  color: black; /* Changed icon color */
+}
+
+.hero-icons .icon:hover {
+  transform: scale(1.15);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Main Image Styling */
+/* Main Image Styling (Right side) */
+.person-image {
+  flex-grow: 1; /* Ensures the image takes up more space */
+  display: flex;
+  justify-content: flex-end; /* Keep it aligned to the right */
+  position: relative;
+  animation: fadeIn 1.5s ease-in-out; /* Added fade-in effect */
+}
+
+/* Image size adjustments */
+.person-image img {
+  width: 100%;
+  max-width: 1000px; /* Increased max-width */
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(1.1) contrast(1.2);
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    animation: fadeInText 2s forwards;
+    transform: translateY(20px);
   }
-  
-  .hero h5 {
-    font-size: 2rem; /* Increase the font size */
-    font-family: 'Open Sans', sans-serif; /* Change font */
-    font-weight: normal; /* Regular weight */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slight shadow to make text pop */
-    letter-spacing: 1px; /* Slight space between letters */
-    opacity: 0;
-    animation: fadeInText 3s forwards;
-    animation-delay: 0.5s; /* Delay animation for the subheading */
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes fadeInText {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .hero-image {
-    width: 100%;
-    max-width: 600px; /* Limit the image size */
-    height: auto;
-    opacity: 0;
-    animation: slideInImage 2s forwards;
-  }
-  
-  @keyframes slideInImage {
-    0% {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column; /* Stack text and image on smaller screens */
-      text-align: center; /* Center the text on small screens */
-    }
-  
-    .hero-image {
-      margin-top: 20px; /* Add space between text and image */
-      max-width: 100%; /* Make the image responsive */
-    }
-  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   

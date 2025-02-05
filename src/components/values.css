@@ -1,8 +1,6 @@
-/* src/components/Values.css */
-
 /* Main values block styling */
 .values-block {
-  background: #fff; /* White background for clarity */
+  background: #fff; /* White background */
   padding: 60px 20px;
   color: #333;
   font-family: 'Poppins', sans-serif;
@@ -17,6 +15,12 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+
+  /* Subtle yellow gradient border */
+  border: 4px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #ffcc00, #cc8200);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 /* Container for the content */
@@ -37,7 +41,7 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #cc8a00;
+  color: #cc8a00; /* Mustard color for title */
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -61,29 +65,39 @@
 
 /* Each value container */
 .value-container {
-  background-color: rgba(0, 0, 0, 0.05); /* Light background */
+  background: #f9f9f9;
   padding: 30px;
   border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: all 0.3s ease-in-out;
-  min-height: 180px; /* Minimum height for consistency */
-  overflow: hidden; /* Prevent content overflow */
+  transition: transform 0.3s ease-in-out;
 }
 
+/* Hover effect for value containers */
 .value-container:hover {
-  transform: scale(1.05); /* Zoom effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Icon styling inside values section */
 .value-container i {
   font-size: 50px; /* Larger icon size */
-  color: #cc8a00; /* Matching mustard icon color */
-  margin-bottom: 20px; /* Space between icon and text */
+  color: #cc8200; /* Yellow for icons */
+  margin-bottom: 20px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
-.value-container p {
-  color: #555;
-  font-weight: 400;
+/* Icon color change on hover for values section */
+.value-container:hover i {
+  color: #cc8200; /* Darker yellow shade on hover */
+}
+
+/* Adding a photo of a person in the value container */
+.value-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 /* Responsive styling for smaller screens */
@@ -93,13 +107,15 @@
   }
 
   .title-holder h2 {
-    font-size: 36px;
+    font-size: 36px; /* Smaller title font on mobile */
   }
 
   .subtitle {
-    font-size: 20px;
+    font-size: 20px; /* Smaller subtitle font on mobile */
   }
 }
+
+
 
 
   

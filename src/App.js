@@ -5,6 +5,7 @@ import Pagination from './components/pagination';
 import Footer from './components/footer';
 import Hero from './components/hero'; // Import Hero component
 import Values from './components/values'; // Import Values component
+import Services from './components/services'; // Import Services component
 import './App.css';
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
   return (
     <div>
       <AppHeader onScrollToSection={scrollToSection} /> {/* Pass the scroll function to the header */}
-      <Hero /> {/* Hero component for the home page section */}
+      <Hero id="home" /> {/* Add the id="home" so scrolling works */}
+
       <main>
         <section id="about" className="section about">
           <About />
@@ -33,8 +35,7 @@ function App() {
           <Pagination totalPages={totalPages} />
         </section>
         <section id="services" className="section services">
-          <h2>Services</h2>
-          <p>Check out the services we offer.</p>
+          <Services />
           <Pagination totalPages={totalPages} />
         </section>
       </main>

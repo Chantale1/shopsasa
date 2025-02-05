@@ -1,51 +1,86 @@
-/* src/components/footer.css */
 .footer {
-    background-color: #333; /* Dark footer background */
-    color: #fff; /* White text */
-    padding: 30px;
-    display: flex;
+  background: linear-gradient(135deg, #ffcc00, #cc8a00); /* Black to mustard gradient */
+  color: #fff; /* White text for contrast */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle effect */
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Footer content layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.map {
+  width: 60%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.contact {
+  width: 35%;
+  text-align: left; /* Align text to the left for the contact section */
+}
+
+.contact h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff; /* White text for headings */
+}
+
+.contact p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.contact p strong {
+  font-weight: bold;
+}
+
+.contact a {
+  color: #fff; /* White links for consistency */
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+  .footer-content {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 80%; /* Adjust the width as needed */
-    flex-wrap: wrap; /* Allow content to wrap for smaller screens */
-  }
-  
+
   .map {
-    width: 60%;
-    height: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 20px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
   }
-  
+
   .contact {
-    width: 35%;
+    width: 100%;
+    text-align: center;
   }
-  
-  .contact h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-  
-  .contact p {
-    font-size: 16px;
-    margin: 5px 0;
-  }
-  
-  .contact a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .contact a:hover {
-    text-decoration: underline;
-  }
+}
+
+
+
+
+
   
   
