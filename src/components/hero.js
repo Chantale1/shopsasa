@@ -2,18 +2,14 @@ import React from 'react';
 import './hero.css';
 import { FaChair, FaPenFancy, FaLaptop, FaBriefcase, FaFileAlt, FaPrint, FaLightbulb } from "react-icons/fa";
 
-import mainImage from '/home/chantale/shopsasa/shopsasa/src/pictures/4-removebg-preview.png'; // Main hero image
-
-
-
 const Hero = () => {
   return (
     <div id="home" className="hero-container">
       <div className="hero-text">
         <h1>Welcome to <span style={{ color: "#000" }}>Shopsasa</span></h1>
         <p>
-          We deal with <span style={{ fontWeight: "600", color: "#000" }}>general  supplies  of  stationery</span>, 
-          <span style={{ fontWeight: "600", color: "#000" }}> office equipment,office furniture</span>, and 
+          We deal with <span style={{ fontWeight: "600", color: "#000" }}>general supplies of stationery</span>, 
+          <span style={{ fontWeight: "600", color: "#000" }}> office equipment, office furniture</span>, and 
           <span style={{ fontWeight: "600", color: "#000" }}> other supplies</span> designed for success!
         </p>
 
@@ -28,21 +24,14 @@ const Hero = () => {
           <div className="icon"><FaLightbulb /></div> {/* Office Lighting */}
         </div>
       </div>
-
-      {/* Main Images */}
-      <div className="hero-images">
-        
-        
-        <div className="person-image">
-          <img src={mainImage} alt="Office Worker" />
-        </div>
-      </div>
-
     </div>
   );
 };
 
 export default Hero;
+
+
+
 
 
 

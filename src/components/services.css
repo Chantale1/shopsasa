@@ -1,6 +1,9 @@
+/* Importing Google Fonts for consistency across pages */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* Main services block */
 .services-block {
-  background: linear-gradient(to right, #ffcc00, #ff9900);
+  background: linear-gradient(to right, #ffcc00, #ff9900); /* Gradient background */
   padding: 80px 20px;
   color: black;
   width: 100%;
@@ -12,6 +15,7 @@
   align-items: center;
   position: relative;
   overflow: hidden; /* Hide overflow to keep images contained */
+  font-family: 'Poppins', sans-serif; /* Consistent font */
 }
 
 /* Services container */
@@ -57,7 +61,6 @@
   right: -420px; /* Move slightly inward */
 }
 
-
 /* Title styling */
 .title-holder {
   text-align: center;
@@ -65,18 +68,20 @@
 }
 
 .title-holder h2 {
-  font-size: 60px;
+  font-size: 60px; /* Adjust font size */
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #000;
   text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif; /* Consistent font */
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 40px; /* Adjusted size for subtitle */
   font-style: italic;
   color: #555;
+  font-family: 'Poppins', sans-serif; /* Consistent font */
 }
 
 /* Services list container */
@@ -93,7 +98,7 @@
 .service-item {
   background: black;
   padding: 20px 30px;
-  border-radius: 12px;
+  border-radius: 32px;
   width: 80%;
   max-width: 900px;
   text-align: center;
@@ -104,7 +109,10 @@
   gap: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif; /* Consistent font */
+  font-size: 24px; /* Increased font size */
 }
+
 /* Staggered stair-like effect */
 .service-item:nth-child(1) {
   margin-left: 0;
@@ -137,6 +145,26 @@
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .title-holder h2 {
+    font-size: 48px; /* Smaller title font on mobile */
+  }
+
+  .subtitle {
+    font-size: 44px; /* Smaller subtitle font on mobile */
+  }
+
+  .service-item {
+    font-size: 40px; /* Adjust font size for mobile */
+  }
+
+  .service-item .icon {
+    font-size: 8cqi; /* Slightly smaller icons on mobile */
+  }
+}
+
 
 
 

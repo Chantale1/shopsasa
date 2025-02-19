@@ -19,7 +19,7 @@ export default function About() {
           <Col md={4}>
             <div className="point-container">
               <i className="fa fa-cogs icon"></i>
-              <p>Our Vision: To embrace change and encourage innovation in all we do.</p>
+              <p>Our Vision: To embrace change and encourage innovation   in all we do.</p>
             </div>
           </Col>
           <Col md={4}>
