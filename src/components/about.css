@@ -1,175 +1,119 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Main about block styling */
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
 
-/* Title holder styling */
+/* About Section */
+.about-section {
+    width: 100%;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Title Holder */
 .title-holder {
-  text-align: center;
-  margin-bottom: 40px; /* Increased space below title */
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .title-holder h2 {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #cc8a00;
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #cc8a00;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Subtitle styling */
 .subtitle {
-  font-size: 30px;
-  font-style: italic;
-  color: #555;
-  margin-bottom: 40px; /* Increased space below subtitle */
+    font-size: 24px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 40px;
 }
 
-/* About text container */
+/* About Text Grid */
 .about-text {
-  font-size: 28px;
-  line-height: 1.8;
-  margin-bottom: 40px; /* Increased margin bottom for spacing */
-  color: #444;
-  max-width: 100%; /* Ensures content uses full width */
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
-  gap: 30px; /* Increased space between containers */
-  padding: 0 40px; /* Increased padding */
-  overflow: hidden; /* Prevents content from getting cut */
-  justify-content: center; /* Centers content */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 80%;
+    margin: auto;
+    padding: 0 20px;
 }
 
-/* Styling for each value container */
-.about-text .point-container {
-  background-color: rgba(0, 0, 0, 0.05); /* Light background */
-  padding: 20px;
-  border-radius: 12px; /* Rounded corners */
-  text-align: center;
-  transition: all 0.3s ease-in-out; /* Smooth hover effect */
-  min-height: 200px; /* Ensures a consistent height for containers */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* Individual Points (Vision, Team, Services) */
+.point-container {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    min-height: 250px;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Hover effect for value containers */
-.about-text .point-container:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+/* Hover Effect */
+.point-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon styling inside containers */
-.about-text .point-container i {
-  font-size: 46px; /* Icon size */
-  color: #cc8a00; /* Matching mustard color */
-  margin-bottom: 20px; /* Space between icon and text */
+/* Icons */
+.point-container i {
+    font-size: 46px;
+    color: #cc8a00;
+    margin-bottom: 20px;
 }
 
-/* Paragraph styling inside containers */
-.about-text p {
-  color: #555;
-  font-weight: 400;
-}
-
-/* Extra content section below main content */
+/* Extra Content */
 .about-extra-content {
-  margin-top: 50px; /* Increased margin for separation */
-  padding-top: 20px;
-  border-top: 3px solid #cc8a00;
-  text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 3px solid #cc8a00;
 }
 
-/* Heading for extra content */
 .about-extra-content h3 {
-  font-size: 38px;
-  color: #cc8a00;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+    font-size: 38px;
+    color: #cc8a00;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-/* Paragraph styling for extra content */
 .about-extra-content p {
-  font-size: 24px;
-  line-height: 1.6;
-  color: #444;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
-}
-
-/* Responsive styles for smaller devices */
-@media (max-width: 1024px) {
-  .about-text {
-    padding: 0 20px; /* Reduce padding for medium screens */
-  }
-
-  .title-holder h2 {
-    font-size: 42px;
-  }
-
-  .subtitle {
-    font-size: 26px;
-  }
-
-  .about-text {
     font-size: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-text .point-container {
-    width: 100%;
+    line-height: 1.6;
+    color: #444;
     padding: 15px;
-  }
-
-  .title-holder h2 {
-    font-size: 36px;
-  }
-
-  .subtitle {
-    font-size: 24px;
-  }
-
-  .about-extra-content h3 {
-    font-size: 30px;
-  }
-
-  .about-extra-content p {
-    font-size: 20px;
-  }
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
 }
 
-@media (max-width: 480px) {
-  .title-holder h2 {
-    font-size: 28px;
-  }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title-holder h2 {
+        font-size: 36px;
+    }
 
-  .subtitle {
-    font-size: 20px;
-  }
+    .subtitle {
+        font-size: 20px;
+    }
 
-  .about-text {
-    font-size: 20px;
-    padding: 0 10px; /* Reduce padding for small screens */
-  }
+    .about-text {
+        font-size: 22px;
+    }
 
-  .about-extra-content h3 {
-    font-size: 24px;
-  }
-
-  .about-extra-content p {
-    font-size: 18px;
-  }
+    .point-container {
+        min-height: 220px;
+    }
 }
+
 
 
