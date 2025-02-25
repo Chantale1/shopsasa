@@ -19,19 +19,19 @@ export default function About() {
           <Col md={4}>
             <div className="point-container">
               <i className="fa fa-cogs icon"></i>
-              <p>Our Vision: To embrace change and encourage innovation   in all we do.</p>
+              <p>Our Vision: To embrace change and encourage innovation in all we do.</p>
             </div>
           </Col>
           <Col md={4}>
             <div className="point-container">
               <i className="fa fa-users icon"></i>
-              <p>Our Team: A group of talented individuals who bring knowledge and experience to every project.</p>
+              <p>A team of talented individuals who bring knowledge and experience to every project.</p>
             </div>
           </Col>
           <Col md={4}>
             <div className="point-container">
               <i className="fa fa-truck icon"></i>
-              <p>Services: We ensure the timely delivery of goods and services to sustain your organization's needs.</p>
+              <p>We ensure timely delivery of quality goods and services.</p>
             </div>
           </Col>
         </Row>
@@ -40,14 +40,8 @@ export default function About() {
           <Col md={12}>
             <h3>Our Mission</h3>
             <p>
-              At ShopSasa, our mission is to build long-term partnerships with our customers and embrace
-              innovation, consistently delivering quality products and services that exceed expectations.
-            </p>
-
-            <h3>Our Team</h3>
-            <p>
-              We are proud of our team of talented individuals who bring a wealth of knowledge and experience
-              to every project. Together, we aim to exceed expectations and deliver exceptional results.
+              At Fazan Cosmetics, our mission is to build long-term partnerships with customers, embracing
+              innovation and consistently delivering quality products that exceed expectations.
             </p>
           </Col>
         </Row>
@@ -55,5 +49,6 @@ export default function About() {
     </section>
   );
 }
+
 
 

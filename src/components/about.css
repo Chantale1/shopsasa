@@ -1,7 +1,6 @@
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -10,7 +9,7 @@ body {
 }
 
 /* About Section */
-.about-section {
+.about-block {
     width: 100%;
     padding: 80px 20px;
     text-align: center;
@@ -18,7 +17,6 @@ body {
 
 /* Title Holder */
 .title-holder {
-    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -40,14 +38,11 @@ body {
 
 /* About Text Grid */
 .about-text {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: flex;
     justify-content: center;
     align-items: stretch;
-    max-width: 80%;
-    margin: auto;
-    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 /* Individual Points (Vision, Team, Services) */
@@ -56,7 +51,7 @@ body {
     padding: 20px;
     border-radius: 12px;
     text-align: center;
-    min-height: 250px;
+    min-height: 200px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -96,7 +91,7 @@ body {
     border-radius: 12px;
 }
 
-/* Responsive Styles */
+/* Responsive Fix */
 @media (max-width: 768px) {
     .title-holder h2 {
         font-size: 36px;
@@ -107,13 +102,11 @@ body {
     }
 
     .about-text {
-        font-size: 22px;
-    }
-
-    .point-container {
-        min-height: 220px;
+        display: flex;
+        flex-direction: column;
     }
 }
+
 
 
 
