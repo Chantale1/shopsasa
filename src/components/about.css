@@ -1,10 +1,7 @@
-/* src/components/About.css */
-
 /* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 /* Main about block styling */
-
 
 /* Title holder styling */
 .title-holder {
@@ -29,18 +26,20 @@
   margin-bottom: 40px; /* Increased space below subtitle */
 }
 
-/* About text with container for creative layout */
+/* About text container */
 .about-text {
   font-size: 28px;
   line-height: 1.8;
   margin-bottom: 40px; /* Increased margin bottom for spacing */
   color: #444;
-  max-width: 80%; /* Ensures the text doesn't span too wide */
+  max-width: 100%; /* Ensures content uses full width */
   text-align: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
   gap: 30px; /* Increased space between containers */
-  padding: 0 20px; /* Padding inside the grid for consistency */
+  padding: 0 40px; /* Increased padding */
+  overflow: hidden; /* Prevents content from getting cut */
+  justify-content: center; /* Centers content */
 }
 
 /* Styling for each value container */
@@ -51,6 +50,10 @@
   text-align: center;
   transition: all 0.3s ease-in-out; /* Smooth hover effect */
   min-height: 200px; /* Ensures a consistent height for containers */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Hover effect for value containers */
@@ -77,6 +80,7 @@
   margin-top: 50px; /* Increased margin for separation */
   padding-top: 20px;
   border-top: 3px solid #cc8a00;
+  text-align: center;
 }
 
 /* Heading for extra content */
@@ -98,9 +102,34 @@
 }
 
 /* Responsive styles for smaller devices */
+@media (max-width: 1024px) {
+  .about-text {
+    padding: 0 20px; /* Reduce padding for medium screens */
+  }
+
+  .title-holder h2 {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+  }
+
+  .about-text {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 768px) {
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .about-text .point-container {
-    padding: 15px; /* Smaller padding for smaller screens */
+    width: 100%;
+    padding: 15px;
   }
 
   .title-holder h2 {
@@ -111,19 +140,36 @@
     font-size: 24px;
   }
 
+  .about-extra-content h3 {
+    font-size: 30px;
+  }
+
+  .about-extra-content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-holder h2 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
   .about-text {
-    font-size: 22px;
+    font-size: 20px;
+    padding: 0 10px; /* Reduce padding for small screens */
+  }
+
+  .about-extra-content h3 {
+    font-size: 24px;
+  }
+
+  .about-extra-content p {
+    font-size: 18px;
   }
 }
 
 
-
-
-
-
-
-  
-  
-  
-  
-  
