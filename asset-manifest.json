@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/shopsasa/static/css/main.fbbabb99.css",
+    "main.css": "/shopsasa/static/css/main.15d93b2b.css",
     "main.js": "/shopsasa/static/js/main.f39f7119.js",
     "static/js/488.088a15a8.chunk.js": "/shopsasa/static/js/488.088a15a8.chunk.js",
     "static/media/shopsasa.jpeg": "/shopsasa/static/media/shopsasa.7ed8411dd99bc3783a4c.jpeg",
     "index.html": "/shopsasa/index.html",
-    "main.fbbabb99.css.map": "/shopsasa/static/css/main.fbbabb99.css.map",
+    "main.15d93b2b.css.map": "/shopsasa/static/css/main.15d93b2b.css.map",
     "main.f39f7119.js.map": "/shopsasa/static/js/main.f39f7119.js.map",
     "488.088a15a8.chunk.js.map": "/shopsasa/static/js/488.088a15a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbbabb99.css",
+    "static/css/main.15d93b2b.css",
     "static/js/main.f39f7119.js"
   ]
 }
