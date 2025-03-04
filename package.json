@@ -2,7 +2,7 @@
   "name": "shopsasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Chantale1.github.io/shopsasa",
+  "homepage": "/",
   "dependencies": {
     "@auth0/auth0-react": "^2.3.0",
     "aos": "^2.3.4",
