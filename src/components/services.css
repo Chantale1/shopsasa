@@ -1,63 +1,80 @@
+
 .services-block {
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to bottom, #ffcc00, #ff9800); /* Smooth gradient */
-  min-height: 100vh; /* Ensure content isn't cut */
-  overflow: hidden; /* Prevent cropping */
+  background: linear-gradient(to bottom, #ffcc00, #ff9800);
+  min-height: 88vh; /* Change from 100vh to auto */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .title-holder {
   margin-bottom: 30px;
 }
 
 .title-holder h2 {
-  font-size: 2rem;
-  color: #fff; /* Better contrast */
-  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: #000;
 }
 
 .subtitle {
-  font-size: 1.1rem;
-  color: #f2f2f2;
+  font-size: 1.2rem;
+  color: #333;
+  font-style: italic;
 }
 
 .services-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
   gap: 20px;
-  padding-bottom: 50px; /* Extra space at the bottom */
+  width: 100%;
 }
 
 .service-item {
   background-color: black;
   color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  border-radius: 15px;
-  width: 250px; /* Adjust width for better layout */
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90vw; /* Make each container bigger */
+  max-width: 900px; /* Prevent excessive stretching */
+  text-align: left;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  gap: 20px;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add staircase effect */
+.service-item:nth-child(odd) {
+  transform: translateX(-30px);
+}
+
+.service-item:nth-child(even) {
+  transform: translateX(30px);
 }
 
 .service-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
 }
 
 .icon {
-  font-size: 3rem; /* Slightly bigger */
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-left: 20px;
 }
 
 .service-title {
-  font-size: 1.2rem;
   font-weight: bold;
+  flex: 1;
 }
+
+
 
 
 
